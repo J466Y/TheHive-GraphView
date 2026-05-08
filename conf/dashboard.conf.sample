@@ -1,0 +1,20 @@
+[TheHive]
+url = http://[THEHIVE_URL]
+api_key = [API_KEY]
+
+[Elasticsearch]
+url = http://[ELASTICSEARCH_URL]
+user = [USERNAME]
+pass = [PASSWORD]
+index = thehive_dashboard_metrics
+
+[Grafana]
+url = http://[GRAFANA_URL]
+user = [USERNAME]
+pass = [PASSWORD]
+
+[Components]
+cortex_url = http://[CORTEX_URL]
+synapse_url = http://[SYNAPSE_URL]
+cassandra_host = [CASSANDRA_HOST]
+cassandra_port = [CASSANDRA_PORT]
