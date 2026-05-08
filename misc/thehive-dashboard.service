@@ -1,0 +1,14 @@
+[Unit]
+Description=TheHive Dashboard Metrics Collector
+After=network.target thehive.service elasticsearch.service
+
+[Service]
+Type=simple
+User=operador
+WorkingDirectory=/opt/TheHive-GraphView
+ExecStart=/usr/bin/python3 /opt/TheHive-GraphView/app.py run
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
